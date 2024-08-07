@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0897f0;
+    background-image: url(../assets/Fundo___Unilife.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.card {
+    height: 535px;
+    width: 400px;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    max-height: 450px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.bemvindo {
+    color: #0072BC;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+}
+
+
+.logo {
+    position: absolute;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    color: #e8f6ff;
+}
+
+
+/*Login*/
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 5% 0 5%;
+}
+
+label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background: #e0dede;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"] {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background: #e0dede;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10%;
+}
+
+/*Button*/
+
+.form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 48px;
+    background: #0674B8;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    gap: 15px;
+    color: #fff;
+    line-height: 22px;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-bottom: 23px;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    transform: scale(1.1);
+    background-color: #0897f0;
+}
+
+.form button:not(hover) {
+    transform: scale(1);
+    color: #fff;
+}
+
+.aa {
+    color: #0674B8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 17px;
+}
+
+.cc {
+    color: #0674B8;
+  }

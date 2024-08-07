@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0897f0;
+    background-size: cover;
+    position: relative;
+    }
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 61vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    
+
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10p;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #3687d3d7;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #3687d3d7;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+.container form .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 45px;
+    background: #0674B8;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 23%;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-top: 10%;
+    
+}
+
+.container form .button:hover{
+    transform: scale(1.1);
+    background-color: #0897f0;
+}
+
+.container form .button:not(hover) {
+    transform: scale(1);
+    color: #fff;
+}
+
+
+.visualizar{
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.visualizar input{
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}

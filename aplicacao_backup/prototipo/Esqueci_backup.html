@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../index.js"></script>
+    <link rel="stylesheet" href="../style_esqueci/esqueci.css">
+    <link rel="shortcut icon" href="../assets/512x512bb-removebg.png">
+    <title>Recuperação De Conta</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="h1">
+            <h1>Esqueci Minha Senha</h1>
+        </div>
+        <div class="p">
+            <p>Insira seu e-mail para alterar sua senha:</p>
+        </div>
+    <!-- Colocar um icone de email igual q ta no react -->
+        <form action="mailer.php" method="post">
+            <div class="input">
+                <input type="text" id="Email" name="Email" placeholder="Insira seu Email">
+            </div>
+
+            <input type="hidden" name="form_submitted" value="1">
+
+            <div class="button-container">
+                <a href="./Confirmacao.html">
+                    <button type="submit" class="button">Enviar</button>
+                </a>
+            </div>
+        </form>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>

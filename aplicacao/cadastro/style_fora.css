@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0897f0;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.form1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10p;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0897f0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #3687d3d7;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.input-box1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+
+.input-box1 input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box1 input:focus-visible {
+    outline: 1px solid #3687d3d7;
+}
+
+.input-box1 label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+    
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+.button2 {
+    width: 230px;
+    height: 48px;
+    background: #0674B8;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    gap: 15px;
+    color: #fff;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.button2:hover {
+    transform: scale(1.1);
+    background-color: #0897f0;
+}
+
+.button2:not(hover) {
+    transform: scale(1);
+    color: #fff;
+}
+
+
+.visualizar {
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.visualizar input {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+}
+
+.curso{
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 2px;
+    font-size: 16px;
+    color: #333;
+    width: 170px;
+    margin-left: 3px;
+}
+
+.voltar{
+    margin-right: 92%;
+    margin-bottom: 15px;
+    color: #0674B8;
+    font-weight:lighter;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    a .form {
+        width: 100%;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-title h6 {
+        margin: 0;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
